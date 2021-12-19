@@ -2,27 +2,33 @@ import React from 'react';
 
 import { HighlightCard } from '../../components/HighlightCard';
 
-import { Container, Header, UserInfo, Photo, User, UserGreeting, UserName, UserWrapper, Icon } from './styles';
+import { Container, Header, UserInfo, Photo, User, UserGreeting,
+   UserName, UserWrapper, Icon, HighlightCards } from './styles';
 
-export function Dashboard(){
+export function Dashboard() {
   return (
-      <Container>
-          <Header>
-            <UserWrapper>
-            <UserInfo>
-              <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/61481164?v=4' }} 
-              />
-              <User>
-                <UserGreeting>Olá,</UserGreeting>
-                <UserName>Patrick</UserName>
-              </User>
-            </UserInfo>
+    <Container>
+      <Header>
+        <UserWrapper>
+          <UserInfo>
+            <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/61481164?v=4' }}
+            />
+            <User>
+              <UserGreeting>Olá,</UserGreeting>
+              <UserName>Patrick</UserName>
+            </User>
+          </UserInfo>
 
-            <Icon name="power" />
-            </UserWrapper>
-          </Header>
+          <Icon name="power" />
+        </UserWrapper>
+      </Header>
 
-          <HighlightCard />
-      </Container>
-    )
+
+      <HighlightCards>
+        <HighlightCard />
+        <HighlightCard />
+        <HighlightCard />
+      </HighlightCards>
+    </Container>
+  )
 }
