@@ -81,3 +81,7 @@ export const Title = styled.Text`
   margin-top: 16px;
   margin-bottom: 10px;
 `;
+
+export const TransactionList = styled.FlatList`
+
+`;
